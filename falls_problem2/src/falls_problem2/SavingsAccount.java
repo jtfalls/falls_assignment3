@@ -3,7 +3,7 @@ package falls_problem2;
 public class SavingsAccount {
 	
 	
-	  private static float annuallInterestRate;
+	  private static float annualInterestRate;
 	  private float savingsBalance;
 	 private float monthlyInterest;
 	
@@ -18,8 +18,8 @@ public class SavingsAccount {
 		 
 		// System.out.format(this.monthlyInterest,savingsBalance);
 		 
-	        this.monthlyInterest = (savingsBalance * annuallInterestRate) / 12;
-	        System.out.println("\nThe monthly interest is :" + this.monthlyInterest);
+	        this.monthlyInterest = (savingsBalance * annualInterestRate) / 12;
+	        System.out.println("\n\tThe monthly interest: \n\t" + this.monthlyInterest + " (with Interest Rate of " + annualInterestRate + ")");
 	        
 	        
 	
@@ -29,7 +29,7 @@ public class SavingsAccount {
 	        
 	        
 	        public static void modifyInterestRate(float interestRate) {
-	            annuallInterestRate = interestRate;
+	            annualInterestRate = interestRate;
 	        }
 	        
 	        private void calculateSavings() {
@@ -40,7 +40,7 @@ public class SavingsAccount {
 	        
 	        public void displaySavings() {
 	            calculateSavings();
-	            System.out.println("\nThe total balance is : " + savingsBalance);
+	            System.out.println("\n\tThe total balance: \n\t" + savingsBalance + " (with Interest Rate of " + annualInterestRate + ')');
 	        }
 	     
 	    
